@@ -1,0 +1,22 @@
+/**
+ * A HANDY CSS DEBUGGING SNIPPET
+ * 
+ * I use the following bit of CSS to help visualize
+ * the structure of an XHTML (or HTML) document
+ * by putting a colored outline around the border
+ * of every element.
+ * At each level in the hierarchy the color changes
+ * so you can see when “depth” changes.
+ *
+ * homepage.mac.com/chrispage/iblog/C42511381/E20060806095030/index.html
+ *
+ */
+
+* { outline: 2px dotted red }
+* * { outline: 2px dotted green }
+* * * { outline: 2px dotted orange }
+* * * * { outline: 2px dotted blue }
+* * * * * { outline: 1px solid red }
+* * * * * * { outline: 1px solid green }
+* * * * * * * { outline: 1px solid orange }
+* * * * * * * * { outline: 1px solid blue }

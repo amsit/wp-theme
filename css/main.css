@@ -1,0 +1,188 @@
+/*@import "snippets.css";*/
+
+html {
+  background: #cccccc
+}
+
+body  {
+  background: inherit;
+  margin: 40px 0;
+  padding: 0 0 20px 0;
+}
+
+.container {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 7px rgba(77, 77, 77, .7);
+  -moz-box-shadow: 0 2px 7px rgba(77, 77, 77, .7);
+  box-shadow: 0 2px 7px rgba(77, 77, 77, .7);
+}
+
+.header {}
+
+  .header .logo {
+    width: 220px;
+  }
+    .logo a {
+      display: block;
+      width: 95px;
+      height: 110px;
+      margin: 35px auto;
+      background: url("../images/logo.png") no-repeat;
+    }
+      .logo a:hover, .logo a:focus {
+      }
+
+  .header .title {
+    padding: 35px 0 25px 0;
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+.navigation {}
+
+  .navigation ul {
+    list-style: none;
+    margin: 0;
+  }
+    ul li {
+      margin-bottom: 10px;
+    }
+
+      ul li a {
+        display: block;
+        height: 34px;
+        background: #bfbfbf;
+        /*text-align: center;*/
+        font-size: 14px;
+        line-height: 36px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0 0 0 10px;
+      }
+
+        ul li a:hover,
+        ul li a:focus {
+          color: #fff;
+          text-decoration: none;
+          background: #62CFFC;
+        }
+
+          ul li a:active,
+          ul li.current_page_item a,
+          ul li.current_page_parent a,
+          ul li.current_page_ancestor a {
+            background: #a2a2a2;
+          }
+
+      ul li ul.children {
+        display: none;
+      }
+
+        ul li.current_page_item ul.children,
+        ul li.current_page_parent ul.children {
+          display: block;
+          border-left: 1px solid #eee;
+          margin: 10px 0 10px 10px;
+          /*padding-left: 5px;*/
+        }
+
+          ul li.current_page_item ul.children li,
+          ul li.current_page_parent ul.children li {
+            /*margin-bottom: 5px;*/
+            margin-bottom: 0;
+          }
+
+            ul li.current_page_item ul.children li a,
+            ul li.current_page_parent ul.children li a {
+              /*height: 22px;*/
+              height: auto;
+              /*line-height: 22px;*/
+              line-height: normal;
+              /*display: inline;*/
+              background: none;
+              /*text-align: left;*/
+              padding: 5px 0 5px 5px;
+              font-size: 13px;
+              color: #404040;
+              /*text-transform: capitalize;*/
+              text-transform: none;
+            }
+
+              ul li.current_page_item ul.children li a:hover,
+              ul li.current_page_item ul.children li a:focus,
+              ul li.current_page_parent ul.children li a:hover,
+              ul li.current_page_parent ul.children li a:focus {
+                /*color: #fff;*/
+                /*color: #111;*/
+                color: #62cffc;
+                /*text-decoration: none;*/
+                text-decoration: underline;
+                /*background: #62CFFC;*/
+                background: none;
+              }
+
+                ul li.current_page_parent ul.children li.current_page_item a {
+                  /*background: #bfbfbf;*/
+                  background: none;
+                  text-decoration: underline;
+                  /*color: #fff;*/
+                  color: #404040;
+                }
+
+.section-title {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.social {
+  position: relative;
+}
+
+  .social .gplusone {
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+
+.content {}
+
+  .content .featured-image {
+    float: left;
+    padding: 0 15px 15px 0;
+  }
+
+  .content .search-result-part {
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+footer {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/*.footer-bottom {*/
+  /*margin: 0 auto;*/
+  /*text-align: center;*/
+/*}*/
+
+
+/* Bootstrap reload */
+
+li {
+  /*color: #404040;*/
+}
+
+.menu-searchform input {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  height: 24px;
+}
+  .menu-searchform input:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
