@@ -163,8 +163,10 @@ body  {
     border-bottom: 1px solid #ccc;
   }
 
-footer {
-  padding-bottom: 20px;
+.footer {
+  border-top: 1px solid #eee;
+  margin: 15px 0 0 0;
+  padding: 15px 0 20px 0;
   text-align: center;
 }
 
@@ -176,8 +178,13 @@ footer {
 
 /* Bootstrap reload */
 
+ol, ul {
+  /*line-height: 14px;*/
+}
+
 li {
   /*color: #404040;*/
+  margin-bottom: 10px;
 }
 
 .menu-searchform input {

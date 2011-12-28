@@ -1,7 +1,9 @@
 </div>
-<footer>
-  &copy;&nbsp;<?php echo copyYear('2011') . ' '; bloginfo('name'); ?>
-</footer> <!-- /footer -->
+<div class="row">
+  <div class="span16 footer">
+    &copy;&nbsp;<?php echo copyYear('2011') . ' '; bloginfo('name'); ?>
+  </div> <!-- /footer -->
+</div>
 
 </div> <!-- /container -->
 <?php wp_footer(); ?>

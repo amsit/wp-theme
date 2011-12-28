@@ -2,9 +2,15 @@ jQuery.noConflict();
 
 jQuery(document).ready(function($) {
 
+//  Fancybox
+
   jQuery(".fancybox").fancybox({
     closeSpeed: 'fast'
   });
+
+//  Placeholder
+
+  jQuery('[placeholder]').placeholder();
 
 //  main styles fix
 
