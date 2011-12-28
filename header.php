@@ -43,6 +43,7 @@
           if(is_search()){
             printf('Search Results for: %s', '<em>' . get_search_query() . '</em>');
           } else the_title();
+          edit_post_link('Edit This');
           ?>
         </small>
       </h1>

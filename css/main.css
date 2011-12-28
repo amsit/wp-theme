@@ -22,15 +22,14 @@ body  {
   .header .logo {
     width: 220px;
   }
-    .logo a {
+    .header .logo a {
       display: block;
       width: 95px;
       height: 110px;
       margin: 35px auto;
       background: url("../images/logo.png") no-repeat;
     }
-      .logo a:hover, .logo a:focus {
-      }
+      .header .logo a:hover, .logo a:focus {}
 
   .header .title {
     padding: 35px 0 25px 0;
@@ -44,11 +43,12 @@ body  {
     list-style: none;
     margin: 0;
   }
-    ul li {
+
+    .navigation ul li {
       margin-bottom: 10px;
     }
 
-      ul li a {
+      .navigation ul li a {
         display: block;
         height: 34px;
         background: #bfbfbf;
@@ -61,40 +61,40 @@ body  {
         padding: 0 0 0 10px;
       }
 
-        ul li a:hover,
-        ul li a:focus {
+      .navigation ul li a:hover,
+      .navigation ul li a:focus {
           color: #fff;
           text-decoration: none;
           background: #62CFFC;
         }
 
-          ul li a:active,
-          ul li.current_page_item a,
-          ul li.current_page_parent a,
-          ul li.current_page_ancestor a {
+          .navigation ul li a:active,
+          .navigation ul li.current_page_item a,
+          .navigation ul li.current_page_parent a,
+          .navigation ul li.current_page_ancestor a {
             background: #a2a2a2;
           }
 
-      ul li ul.children {
+      .navigation ul li ul.children {
         display: none;
       }
 
-        ul li.current_page_item ul.children,
-        ul li.current_page_parent ul.children {
+        .navigation ul li.current_page_item ul.children,
+        .navigation ul li.current_page_parent ul.children {
           display: block;
           border-left: 1px solid #eee;
           margin: 10px 0 10px 10px;
           /*padding-left: 5px;*/
         }
 
-          ul li.current_page_item ul.children li,
-          ul li.current_page_parent ul.children li {
+          .navigation ul li.current_page_item ul.children li,
+          .navigation ul li.current_page_parent ul.children li {
             /*margin-bottom: 5px;*/
             margin-bottom: 0;
           }
 
-            ul li.current_page_item ul.children li a,
-            ul li.current_page_parent ul.children li a {
+            .navigation ul li.current_page_item ul.children li a,
+            .navigation ul li.current_page_parent ul.children li a {
               /*height: 22px;*/
               height: auto;
               /*line-height: 22px;*/
@@ -109,10 +109,10 @@ body  {
               text-transform: none;
             }
 
-              ul li.current_page_item ul.children li a:hover,
-              ul li.current_page_item ul.children li a:focus,
-              ul li.current_page_parent ul.children li a:hover,
-              ul li.current_page_parent ul.children li a:focus {
+              .navigation ul li.current_page_item ul.children li a:hover,
+              .navigation ul li.current_page_item ul.children li a:focus,
+              .navigation ul li.current_page_parent ul.children li a:hover,
+              .navigation ul li.current_page_parent ul.children li a:focus {
                 /*color: #fff;*/
                 /*color: #111;*/
                 color: #62cffc;
@@ -122,13 +122,18 @@ body  {
                 background: none;
               }
 
-                ul li.current_page_parent ul.children li.current_page_item a {
+                .navigation ul li.current_page_parent ul.children li.current_page_item a {
                   /*background: #bfbfbf;*/
                   background: none;
                   text-decoration: underline;
                   /*color: #fff;*/
                   color: #404040;
                 }
+
+  .post-edit-link {
+    margin: 0 0 0 10px;
+    color: #fff;
+  }
 
 .section-title {
   text-transform: uppercase;
